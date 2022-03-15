@@ -87,6 +87,14 @@ namespace csPrac
 
             optimusPrime.Transform();
             megatron.Transform();
+
+            Voltron voltron = new Voltron()
+            {
+                Name = "Voltron",
+                Shape = "space ship"
+            };
+
+            voltron.Transform();
         }
     }
 }

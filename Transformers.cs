@@ -24,7 +24,7 @@ namespace csPrac
         public string Name { get; set; }
         public string Shape { get; set; }
 
-        public void Transform()
+        public virtual void Transform()
         {
             Console.WriteLine($"{Name} is now a {Shape}");
         }
