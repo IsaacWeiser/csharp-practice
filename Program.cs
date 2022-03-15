@@ -3,41 +3,11 @@ using System.Collections.Generic;
 
 namespace csPrac
 {
-    public class Un
-    {
-        // properties
-        public List<string> Countries;
-
-        //fields
-        private List<String> _baddies = new List<string>();
-
-        //constructor
-        public Un(List<string> members)
-        {
-            Countries = members;
-        }
-
-        //methods
-        public void admitBaddies(List<string> bads)
-        {
-            foreach (string evilPeep in bads)
-            {
-                _baddies.Add(evilPeep);
-            }
-
-            foreach (string nat in _baddies)
-            {
-                Console.WriteLine(nat);
-            }
-        }
-    }
-
-
-
     class Program
     {
         static void Main(string[] args)
         {
+            // united  nations section/////////////////////////////////////////////////////////////////////////////////////////
             List<string> countries = new List<string>()
             {
                 "Afghanistan","Albania","Algeria","Andorra","Angola","Antigua & Deps","Argentina","Armenia","Australia",
@@ -90,14 +60,33 @@ namespace csPrac
                 }
             }
 
-            for (int i = 0; i < 10; i++)
-            {
-                if (nums.Length < i)
-                {
-                    throw new Exception("outpaced array size");
-                }
-            }
+            /* for (int i = 0; i < 10; i++)
+             {
+                 if (nums.Length < i)
+                 {
+                     throw new Exception("outpaced array size");
+                 }
+             } */
 
+
+            // animals section ///////////////////////////////////////////////////////////////////////////////////////////////////
+            Tiger tony = new Tiger();
+            tony.Name = "Tony";
+
+            tony.speak();
+
+            // transformers section -//////////////////-//////////////////////////////////////////////////////////////////////////////////////            
+            AutoBot optimusPrime = new AutoBot("Optimus Prime");
+            optimusPrime.Shape = "Truck";
+
+            Decepticon megatron = new Decepticon()
+            {
+                Name = "Megatron",
+                Shape = "Plane"
+            };
+
+            optimusPrime.Transform();
+            megatron.Transform();
         }
     }
 }
