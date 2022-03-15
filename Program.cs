@@ -95,6 +95,51 @@ namespace csPrac
             };
 
             voltron.Transform();
+            // table and seating lightning exercise ////////////////////////////////////////////////////////////////////////////////////////
+
+            Loveseat loveSeat = new Loveseat()
+            {
+                Name = "Herman's big chance"
+            };
+            DiningChair chaire = new DiningChair()
+            {
+                Name = "tossed salad feasting seat"
+            };
+
+            Nightstand one = new Nightstand()
+            {
+                Name = "uno"
+            };
+            DiningTable feast = new DiningTable()
+            {
+                Name = "Jeffery's minor delights table"
+            };
+
+            List<ISeating> chairs = new List<ISeating>()
+            {
+                loveSeat, chaire
+            };
+            List<ITable> tables = new List<ITable>()
+            {
+                one, feast
+            };
+            List<Furniture> furn = new List<Furniture>()
+            {
+                loveSeat, chaire, one, feast
+            };
+
+            foreach (ISeating seat in chairs)
+            {
+                Console.WriteLine(seat.hasArmRest);
+            }
+            foreach (ITable table in tables)
+            {
+                Console.WriteLine(table.width);
+            }
+            foreach (Furniture item in furn)
+            {
+                Console.WriteLine(item.Name);
+            }
         }
     }
 }

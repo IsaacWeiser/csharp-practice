@@ -8,4 +8,16 @@ namespace csPrac
 
         public void Transform();
     }
+
+    public interface ISeating
+    {
+        public bool hasArmRest { get; set; }
+    }
+
+    public interface ITable
+    {
+        public int width { get; set; }
+        public int length { get; set; }
+        public int height { get; set; }
+    }
 }
