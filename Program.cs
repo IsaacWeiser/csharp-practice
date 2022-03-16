@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csPrac
 {
@@ -140,6 +141,39 @@ namespace csPrac
             {
                 Console.WriteLine(item.Name);
             }
+            // dictionaries //////////////////////////////////////////////////////////////////////////////////////////////////////
+            Dictionary<string, int> ret = new Dictionary<string, int>()
+            {
+                {"Alfred" , 1},
+                {"Bruce" , 2},
+                {"Carrie", 3}
+            };
+
+            ret.Add("d", 4);
+
+
+            foreach (KeyValuePair<string, int> i in ret)
+            {
+                Console.WriteLine($"{i.Key} : {i.Value}");
+            }
+
+            // Linq methods /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // iphone
+            Iphone six = new Iphone(6.4);
+
+            six.playSong();
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

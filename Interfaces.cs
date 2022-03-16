@@ -20,4 +20,9 @@ namespace csPrac
         public int length { get; set; }
         public int height { get; set; }
     }
+
+    public interface IProduct
+    {
+        public double Screen { get; set; }
+    }
 }
