@@ -163,6 +163,13 @@ namespace csPrac
 
             six.playSong();
 
+            Jerry.terry();
+
+            Crooner.jimmyJazz();
+
+            Crooner x = new Crooner();
+            x.bass();
+
 
 
 

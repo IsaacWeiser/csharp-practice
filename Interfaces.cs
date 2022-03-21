@@ -25,4 +25,11 @@ namespace csPrac
     {
         public double Screen { get; set; }
     }
+
+    public interface Music
+    {
+        public int AlbumLength { get; set; }
+
+
+    }
 }
